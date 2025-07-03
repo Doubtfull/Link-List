@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    background-color: #010d13;
+}
+
+/*
+
+Style our app according to the provided design!
+
+green color -> #5f9341
+
+*/
+
+
+input {
+    width: 100%; /* 100% */
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #021a25;
+    font-size: 16px;
+    color: #8fd3fa;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    color: #8fd3fa;
+    background-color: #0f51be;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.save-btn:hover {
+    
+}
+
+.save-btn:active {
+    margin-top: 9px;
+    margin-left: 1px;
+    box-shadow: none;
+}
+
+ul {
+  border-width: 1px;
+  border-style: solid none none solid;
+  border-image: linear-gradient(
+    177deg,         /* from top-left to bottom-right */
+    #3a4fd5,        /* solid blue start */
+    #3a4fd51e 20%,     /* hold color until 20% */
+    #3ad0d500 100%   /* fully transparent at end */
+  ) 1;
+}
+/*
+#061f4a
+
+outline: #0f51be
+*/
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #8fd3fa;
+}

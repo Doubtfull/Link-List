@@ -1,3 +1,5 @@
+const theme = document.getElementById("theme")
+const logo = document.getElementById("logo")
 const saveBtn = document.getElementById("input-btn")
 const inputEl = document.getElementById("input-el")
 const ulEl = document.getElementById("ul-el")
@@ -19,6 +21,18 @@ function renderLeads() {
     ulEl.innerHTML = listItems;
     inputEl.value = ""
 }
+
+theme.addEventListener("click", function () {
+    document.body.classList.toggle("dark_mode");
+    theme.classList.toggle("sun-icon");
+    logo.classList.toggle("logo-darkmode");
+
+    if (document.body.classList.contains("dark_mode")) {
+        theme.src = "Icons/Sun Icon.png";
+    } else {
+        theme.src = "Icons/Cresent Icon.png";
+    }
+})
 
 saveBtn.addEventListener("click", function () {
     myLeads.push(inputEl.value)

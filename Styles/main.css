@@ -1,8 +1,25 @@
+:root {
+    --primary-colour1: rgb(0, 0, 0);
+    --primary-colour2: rgb(255, 255, 255);
+    --primary-colour3: #474747;
+    --primary-colour4: #292929;
+    --primary-colour5: #f0eeee;
+}
+
+.dark_mode {
+    --primary-colour1: rgb(238, 238, 238);
+    --primary-colour2: rgb(22, 22, 22);
+    --primary-colour3: #d1d1d1;
+    --primary-colour4: #dfdfdf;
+    --primary-colour5: #272727;
+}
+
 body {
     margin: 0;
     padding: 10px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    background-color: #010d13;
+    background-color: var(--primary-colour2);
+    min-width: 450px;
 }
 
 /*
@@ -13,6 +30,40 @@ green color -> #5f9341
 
 */
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.theme-icon, .sun-icon {
+    width: 35px;
+    cursor: pointer;
+}
+
+.sun-icon, .logo-darkmode {
+    filter: invert(100%);
+    mix-blend-mode: difference;
+}
+
+.logo {
+    width: 40px;
+    margin: 0;
+}
+
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-colour4);
+}
 
 input {
     width: 100%; /* 100% */
@@ -20,26 +71,27 @@ input {
     box-sizing: border-box;
     border: none;
     outline: none;
-    background-color: #021a25;
+    background-color: var(--primary-colour5);
     font-size: 16px;
-    color: #8fd3fa;
+    color: var(--primary-colour1);
 }
 
 .save-btn {
     padding: 10px 20px;
-    color: #8fd3fa;
-    background-color: #0f51be;
+    color: white;
+    background-color: #0fbe6c;
     border-style: none;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-top: 8px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
+    transition: opacity .2s;
 }
 
 .save-btn:hover {
-    
+    opacity: .9;
 }
 
 .save-btn:active {
@@ -49,14 +101,8 @@ input {
 }
 
 ul {
-  border-width: 1px;
-  border-style: solid none none solid;
-  border-image: linear-gradient(
-    177deg,         /* from top-left to bottom-right */
-    #3a4fd5,        /* solid blue start */
-    #3a4fd51e 20%,     /* hold color until 20% */
-    #3ad0d500 100%   /* fully transparent at end */
-  ) 1;
+  padding: 0;
+  margin-top: 30px;
 }
 /*
 #061f4a
@@ -65,9 +111,17 @@ outline: #0f51be
 */
 li {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
+    font-size: 17px;
+    font-weight: 500;
     text-decoration: none;
-    color: #8fd3fa;
+    color: var(--primary-colour1);
+}
+
+a:hover {
+    color: var(--primary-colour3);
 }

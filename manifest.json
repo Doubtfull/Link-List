@@ -4,6 +4,9 @@
     "name": "LINK-LIST",
     "action": {
         "default_popup": "index.html",
-        "default_icon": "Icons/Icon.png"
-    }
+        "default_icon": "Icons/Icon White.png"
+    },
+    "permissions": [
+        "tabs"
+    ]
 }

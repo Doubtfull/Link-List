@@ -1,7 +1,7 @@
 # Link-List
 
 ## Description
-Link-List is a simple browser extension that lets you store and manage website links in one place. You can save a link by pasting it into the input box or use the “ave Tab button to store the URL of your current tab. Links are listed in a clean interface so you can revisit them later. You can also remove all saved links with a single click using the Delete All button.
+Link-List is a simple browser extension that lets you store and manage website links in one place. You can save a link by pasting it into the input box or use the Save Tab button to store the URL of your current tab. Links are listed in a clean interface so you can revisit them later. You can also remove all saved links with a single click using the Delete All button.
 
 ## Installation
 1. Download the project files.
